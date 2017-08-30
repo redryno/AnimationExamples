@@ -15,7 +15,6 @@
 		032EEE461B9974BE003E4ACF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032EEE451B9974BE003E4ACF /* Images.xcassets */; };
 		032EEE491B9974BE003E4ACF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032EEE471B9974BE003E4ACF /* LaunchScreen.xib */; };
 		032EEE551B9974BE003E4ACF /* TableExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 032EEE541B9974BE003E4ACF /* TableExampleTests.m */; };
-		032EEE5F1B99759B003E4ACF /* 2012-triumph-bonneville-a-1_800x0w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 032EEE5E1B99759B003E4ACF /* 2012-triumph-bonneville-a-1_800x0w.jpg */; };
 		032EEE621B997CB5003E4ACF /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032EEE611B997CB5003E4ACF /* FaceView.m */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		032EEE4E1B9974BE003E4ACF /* TableExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032EEE531B9974BE003E4ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032EEE541B9974BE003E4ACF /* TableExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableExampleTests.m; sourceTree = "<group>"; };
-		032EEE5E1B99759B003E4ACF /* 2012-triumph-bonneville-a-1_800x0w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2012-triumph-bonneville-a-1_800x0w.jpg"; sourceTree = "<group>"; };
 		032EEE601B997CB5003E4ACF /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
 		032EEE611B997CB5003E4ACF /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 		032EEE341B9974BE003E4ACF /* TableExample */ = {
 			isa = PBXGroup;
 			children = (
-				032EEE5E1B99759B003E4ACF /* 2012-triumph-bonneville-a-1_800x0w.jpg */,
 				032EEE391B9974BE003E4ACF /* AppDelegate.h */,
 				032EEE3A1B9974BE003E4ACF /* AppDelegate.m */,
 				032EEE601B997CB5003E4ACF /* FaceView.h */,
@@ -181,7 +178,8 @@
 				TargetAttributes = {
 					032EEE311B9974BE003E4ACF = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = Y3WVS7VY23;
+						DevelopmentTeam = X3R9LDS4NE;
+						ProvisioningStyle = Automatic;
 					};
 					032EEE4D1B9974BE003E4ACF = {
 						CreatedOnToolsVersion = 6.4;
@@ -214,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				032EEE441B9974BE003E4ACF /* Main.storyboard in Resources */,
-				032EEE5F1B99759B003E4ACF /* 2012-triumph-bonneville-a-1_800x0w.jpg in Resources */,
 				032EEE491B9974BE003E4ACF /* LaunchScreen.xib in Resources */,
 				032EEE461B9974BE003E4ACF /* Images.xcassets in Resources */,
 			);
@@ -370,11 +367,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y3WVS7VY23;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X3R9LDS4NE;
 				INFOPLIST_FILE = TableExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.weareraster.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanbigger.TableExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -383,11 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y3WVS7VY23;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X3R9LDS4NE;
 				INFOPLIST_FILE = TableExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.weareraster.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanbigger.TableExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -3,11 +3,10 @@
 //  TableExample
 //
 //  Created by Ryan Bigger on 9/3/15.
-//  Copyright (c) 2015 Raster. All rights reserved.
+//  Copyright © 2017 Ryan Bigger. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
 
 @interface AppDelegate ()
 

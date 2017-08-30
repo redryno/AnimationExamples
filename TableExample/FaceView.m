@@ -3,16 +3,17 @@
 //  TableExample
 //
 //  Created by Ryan Bigger on 9/3/15.
-//  Copyright (c) 2015 Raster. All rights reserved.
+//  Copyright © 2017 Ryan Bigger. All rights reserved.
 //
 
 #import "FaceView.h"
 
-@interface FaceView () {
-    CAShapeLayer *_eyes;
-}
+@interface FaceView ()
+
+@property (strong, nonatomic) CAShapeLayer *eyes;
 
 @end
+
 
 @implementation FaceView
 
@@ -25,7 +26,7 @@
     _eyes = [CAShapeLayer layer];
     _eyes.fillColor = [UIColor whiteColor].CGColor;
     _eyes.path = [self openEyesPath].CGPath;
-    [self.layer addSublayer:_eyes];
+    [self.layer addSublayer: _eyes];
 }
 
 - (UIBezierPath *)closedEyesPath {
