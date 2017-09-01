@@ -1,4 +1,4 @@
-# Table Animation Examples
+# Animation Examples
 
 Here are a few animations I put together to help another iOS developer with a project he was having trouble with.
 
