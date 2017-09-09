@@ -7,6 +7,7 @@
 //
 
 #import "FaceView.h"
+#import "RobotStyleKit.h"
 
 @interface FaceView ()
 
@@ -23,8 +24,11 @@
 }
 
 - (void)setup {
+    self.layer.borderColor = [UIColor colorWithRed: 0.4 green: 0 blue: 0.8 alpha: 1].CGColor;
+    self.layer.borderWidth = 0.5;
+    
     _eyes = [CAShapeLayer layer];
-    _eyes.fillColor = [UIColor whiteColor].CGColor;
+    _eyes.fillColor = [UIColor colorWithRed: 0.4 green: 0 blue: 0.8 alpha: 1].CGColor;
     _eyes.path = [self openEyesPath].CGPath;
     [self.layer addSublayer: _eyes];
 }
@@ -32,36 +36,36 @@
 - (UIBezierPath *)closedEyesPath {
     // Used PaintCode to generate the paths
     //// Bezier Closed
-    UIBezierPath* bezier2Path = UIBezierPath.bezierPath;
-    [bezier2Path moveToPoint: CGPointMake(35, 30)];
-    [bezier2Path addCurveToPoint: CGPointMake(30, 29) controlPoint1: CGPointMake(35, 29.45) controlPoint2: CGPointMake(32.76, 29)];
-    [bezier2Path addCurveToPoint: CGPointMake(25, 30) controlPoint1: CGPointMake(27.24, 29) controlPoint2: CGPointMake(25, 29.45)];
-    [bezier2Path addCurveToPoint: CGPointMake(30, 31) controlPoint1: CGPointMake(25, 30.55) controlPoint2: CGPointMake(27.24, 31)];
-    [bezier2Path addCurveToPoint: CGPointMake(35, 30) controlPoint1: CGPointMake(32.76, 31) controlPoint2: CGPointMake(35, 30.55)];
-    [bezier2Path closePath];
-    [bezier2Path moveToPoint: CGPointMake(74, 30)];
-    [bezier2Path addCurveToPoint: CGPointMake(69, 29) controlPoint1: CGPointMake(74, 29.45) controlPoint2: CGPointMake(71.76, 29)];
-    [bezier2Path addCurveToPoint: CGPointMake(64, 30) controlPoint1: CGPointMake(66.24, 29) controlPoint2: CGPointMake(64, 29.45)];
-    [bezier2Path addCurveToPoint: CGPointMake(69, 31) controlPoint1: CGPointMake(64, 30.55) controlPoint2: CGPointMake(66.24, 31)];
-    [bezier2Path addCurveToPoint: CGPointMake(74, 30) controlPoint1: CGPointMake(71.76, 31) controlPoint2: CGPointMake(74, 30.55)];
-    [bezier2Path closePath];
-    return bezier2Path;
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(39.5, 27)];
+    [bezierPath addCurveToPoint: CGPointMake(36, 27.5) controlPoint1: CGPointMake(39.5, 27.28) controlPoint2: CGPointMake(37.93, 27.5)];
+    [bezierPath addCurveToPoint: CGPointMake(32.5, 27) controlPoint1: CGPointMake(34.07, 27.5) controlPoint2: CGPointMake(32.5, 27.28)];
+    [bezierPath addCurveToPoint: CGPointMake(36, 26.5) controlPoint1: CGPointMake(32.5, 26.72) controlPoint2: CGPointMake(34.07, 26.5)];
+    [bezierPath addCurveToPoint: CGPointMake(39.5, 27) controlPoint1: CGPointMake(37.93, 26.5) controlPoint2: CGPointMake(39.5, 26.72)];
+    [bezierPath closePath];
+    [bezierPath moveToPoint: CGPointMake(67.5, 27)];
+    [bezierPath addCurveToPoint: CGPointMake(64, 27.5) controlPoint1: CGPointMake(67.5, 27.28) controlPoint2: CGPointMake(65.93, 27.5)];
+    [bezierPath addCurveToPoint: CGPointMake(60.5, 27) controlPoint1: CGPointMake(62.07, 27.5) controlPoint2: CGPointMake(60.5, 27.28)];
+    [bezierPath addCurveToPoint: CGPointMake(64, 26.5) controlPoint1: CGPointMake(60.5, 26.72) controlPoint2: CGPointMake(62.07, 26.5)];
+    [bezierPath addCurveToPoint: CGPointMake(67.5, 27) controlPoint1: CGPointMake(65.93, 26.5) controlPoint2: CGPointMake(67.5, 26.72)];
+    [bezierPath closePath];
+    return bezierPath;
 }
 
 - (UIBezierPath *)openEyesPath {
     //// Bezier Open
-    UIBezierPath* bezierPath = UIBezierPath.bezierPath;
-    [bezierPath moveToPoint: CGPointMake(35, 30)];
-    [bezierPath addCurveToPoint: CGPointMake(30, 25) controlPoint1: CGPointMake(35, 27.24) controlPoint2: CGPointMake(32.76, 25)];
-    [bezierPath addCurveToPoint: CGPointMake(25, 30) controlPoint1: CGPointMake(27.24, 25) controlPoint2: CGPointMake(25, 27.24)];
-    [bezierPath addCurveToPoint: CGPointMake(30, 35) controlPoint1: CGPointMake(25, 32.76) controlPoint2: CGPointMake(27.24, 35)];
-    [bezierPath addCurveToPoint: CGPointMake(35, 30) controlPoint1: CGPointMake(32.76, 35) controlPoint2: CGPointMake(35, 32.76)];
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(39.5, 27)];
+    [bezierPath addCurveToPoint: CGPointMake(36, 30.5) controlPoint1: CGPointMake(39.5, 28.93) controlPoint2: CGPointMake(37.93, 30.5)];
+    [bezierPath addCurveToPoint: CGPointMake(32.5, 27) controlPoint1: CGPointMake(34.07, 30.5) controlPoint2: CGPointMake(32.5, 28.93)];
+    [bezierPath addCurveToPoint: CGPointMake(36, 23.5) controlPoint1: CGPointMake(32.5, 25.07) controlPoint2: CGPointMake(34.07, 23.5)];
+    [bezierPath addCurveToPoint: CGPointMake(39.5, 27) controlPoint1: CGPointMake(37.93, 23.5) controlPoint2: CGPointMake(39.5, 25.07)];
     [bezierPath closePath];
-    [bezierPath moveToPoint: CGPointMake(74, 30)];
-    [bezierPath addCurveToPoint: CGPointMake(69, 25) controlPoint1: CGPointMake(74, 27.24) controlPoint2: CGPointMake(71.76, 25)];
-    [bezierPath addCurveToPoint: CGPointMake(64, 30) controlPoint1: CGPointMake(66.24, 25) controlPoint2: CGPointMake(64, 27.24)];
-    [bezierPath addCurveToPoint: CGPointMake(69, 35) controlPoint1: CGPointMake(64, 32.76) controlPoint2: CGPointMake(66.24, 35)];
-    [bezierPath addCurveToPoint: CGPointMake(74, 30) controlPoint1: CGPointMake(71.76, 35) controlPoint2: CGPointMake(74, 32.76)];
+    [bezierPath moveToPoint: CGPointMake(67.5, 27)];
+    [bezierPath addCurveToPoint: CGPointMake(64, 30.5) controlPoint1: CGPointMake(67.5, 28.93) controlPoint2: CGPointMake(65.93, 30.5)];
+    [bezierPath addCurveToPoint: CGPointMake(60.5, 27) controlPoint1: CGPointMake(62.07, 30.5) controlPoint2: CGPointMake(60.5, 28.93)];
+    [bezierPath addCurveToPoint: CGPointMake(64, 23.5) controlPoint1: CGPointMake(60.5, 25.07) controlPoint2: CGPointMake(62.07, 23.5)];
+    [bezierPath addCurveToPoint: CGPointMake(67.5, 27) controlPoint1: CGPointMake(65.93, 23.5) controlPoint2: CGPointMake(67.5, 25.07)];
     [bezierPath closePath];
     return bezierPath;
 }
@@ -84,12 +88,8 @@
     [_eyes addAnimation:animationGroup forKey:@"pulse"];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
+    [RobotStyleKit drawRobot];
 }
-*/
 
 @end

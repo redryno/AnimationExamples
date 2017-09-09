@@ -16,6 +16,7 @@
 		032EEE491B9974BE003E4ACF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032EEE471B9974BE003E4ACF /* LaunchScreen.xib */; };
 		032EEE551B9974BE003E4ACF /* TableExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 032EEE541B9974BE003E4ACF /* TableExampleTests.m */; };
 		032EEE621B997CB5003E4ACF /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032EEE611B997CB5003E4ACF /* FaceView.m */; };
+		03D3C15E1F636535001806FC /* RobotStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3C15D1F636535001806FC /* RobotStyleKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		032EEE541B9974BE003E4ACF /* TableExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableExampleTests.m; sourceTree = "<group>"; };
 		032EEE601B997CB5003E4ACF /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
 		032EEE611B997CB5003E4ACF /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
+		03D3C15C1F636535001806FC /* RobotStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotStyleKit.h; sourceTree = "<group>"; };
+		03D3C15D1F636535001806FC /* RobotStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotStyleKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			children = (
 				032EEE391B9974BE003E4ACF /* AppDelegate.h */,
 				032EEE3A1B9974BE003E4ACF /* AppDelegate.m */,
+				03D3C15C1F636535001806FC /* RobotStyleKit.h */,
+				03D3C15D1F636535001806FC /* RobotStyleKit.m */,
 				032EEE601B997CB5003E4ACF /* FaceView.h */,
 				032EEE611B997CB5003E4ACF /* FaceView.m */,
 				032EEE3C1B9974BE003E4ACF /* MasterViewController.h */,
@@ -232,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				032EEE3B1B9974BE003E4ACF /* AppDelegate.m in Sources */,
+				03D3C15E1F636535001806FC /* RobotStyleKit.m in Sources */,
 				032EEE3E1B9974BE003E4ACF /* MasterViewController.m in Sources */,
 				032EEE621B997CB5003E4ACF /* FaceView.m in Sources */,
 				032EEE381B9974BE003E4ACF /* main.m in Sources */,

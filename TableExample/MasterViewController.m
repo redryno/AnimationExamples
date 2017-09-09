@@ -65,13 +65,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    UILabel *label1 = (UILabel *)[cell viewWithTag:100];
-    label1.text = [NSString stringWithFormat:@"%tu - Table View Cell", indexPath.row];
-    
-    UILabel *label2 = (UILabel *)[cell viewWithTag:101];
-    label2.text = [NSString stringWithFormat:@"%tu", indexPath.row * 80];
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"%tu - Table View Cell", indexPath.row];
     return cell;
 }
 

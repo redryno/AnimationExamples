@@ -29,7 +29,7 @@
         <scene sceneID="VgW-fR-Quf">
             <objects>
                 <tableViewController title="Master" id="pGg-6v-bdr" customClass="MasterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,7 +45,7 @@
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihB-dU-xXR" customClass="FaceView">
                                     <rect key="frame" x="137.5" y="255" width="100" height="100"/>
-                                    <color key="backgroundColor" red="0.0" green="0.63137254899999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.26552666852503648" green="0.80713516941490571" blue="0.92605251736111116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="7KW-o4-pEA"/>
                                         <constraint firstAttribute="height" constant="100" id="aSd-mN-fLM"/>
@@ -63,48 +63,11 @@
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="m0d-ak-lc9">
-                                <rect key="frame" x="0.0" y="382" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="382" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="d3P-M7-ByW">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index Path Row " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k11-00-0NM">
-                                            <rect key="frame" x="15" y="10" width="122" height="24"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="24" id="AAR-N6-RK8"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="IQX-XX-v42"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkk-S6-kX6">
-                                            <rect key="frame" x="153" y="10" width="31" height="24"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="24" id="Stj-mS-F8d"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="eg2-fY-vUI"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmileImage" translatesAutoresizingMaskIntoConstraints="NO" id="qcg-Fb-11C">
-                                            <rect key="frame" x="200" y="10" width="24" height="24"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="24" id="6mU-lh-JUT"/>
-                                                <constraint firstAttribute="width" constant="24" id="hAj-YF-zdK"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="k11-00-0NM" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="10" id="1yC-Ev-Mlp"/>
-                                        <constraint firstItem="qcg-Fb-11C" firstAttribute="leading" secondItem="bkk-S6-kX6" secondAttribute="trailing" constant="16" id="2tx-E0-WAo"/>
-                                        <constraint firstItem="k11-00-0NM" firstAttribute="leading" secondItem="d3P-M7-ByW" secondAttribute="leading" constant="15" id="Sk7-5x-ekY"/>
-                                        <constraint firstItem="bkk-S6-kX6" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="10" id="Yms-jw-dFG"/>
-                                        <constraint firstItem="qcg-Fb-11C" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="10" id="duB-uH-vSt"/>
-                                        <constraint firstItem="bkk-S6-kX6" firstAttribute="leading" secondItem="k11-00-0NM" secondAttribute="trailing" constant="16" id="wjy-W2-lcZ"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -198,7 +161,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SmileImage" width="24" height="24"/>
         <image name="Triumph" width="800" height="600"/>
     </resources>
 </document>

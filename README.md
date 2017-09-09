@@ -18,7 +18,7 @@ This animation is a achieved by setting the view layers transform property to sc
 
 ### Blinking Eyes
 ##### problem
-After the image appears, the green square has eyes that blink every few seconds.  This animation should repeat as long as the app is open.
+After the image appears, the robot has eyes that blink every few seconds.  This animation should repeat as long as the app is open.
 
 ##### solution
 Okay, I cheated a little bit on this one.  I used a program to called [PaintCode](https://www.paintcodeapp.com) to generate the two paths that the [CAShapeLayer](https://developer.apple.com/documentation/quartzcore/cashapelayer?language=objc) needs to make the eyes blink.  There's a path for closed eyes which looks like two thin ellipses, and there's an open eyes path which looks like two full circles.
