@@ -45,7 +45,7 @@
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihB-dU-xXR" customClass="FaceView">
                                     <rect key="frame" x="137.5" y="255" width="100" height="100"/>
-                                    <color key="backgroundColor" red="0.26552666852503648" green="0.80713516941490571" blue="0.92605251736111116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.76042751736111114" green="0.72085503472222223" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="7KW-o4-pEA"/>
                                         <constraint firstAttribute="height" constant="100" id="aSd-mN-fLM"/>

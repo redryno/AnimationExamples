@@ -18,9 +18,19 @@
 
 @implementation FaceView
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resume) name:UIApplicationDidBecomeActiveNotification object:nil];
     [self setup];
+}
+
+- (void)resume {
+    [self performSelector:@selector(blinkEyes) withObject:nil afterDelay:1.0];
 }
 
 - (void)setup {
